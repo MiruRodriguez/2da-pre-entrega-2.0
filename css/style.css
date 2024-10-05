@@ -39,17 +39,8 @@ body {
   color: white;
 }
 
-/* aca no se como hacer para q las rayitas del menu hamburguesa queden blancas */
-
-.navbar-toggler {
-  border-color: #ddd;
-  color: #ddd;
-  background-color: #ddd;
-  stroke: #ddd;
-}
-
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Estilos de los enlaces */
@@ -428,13 +419,15 @@ footer ul {
   list-style: none;
 }
 
-.row {
+.row-footer {
   width: 100%;
-
+  max-width: 1200px; 
+  margin: 0 auto; 
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 0 15px; 
 }
 
 .col {
@@ -589,28 +582,55 @@ footer ul {
 /* tablets (768px - 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
   h1 {
-    font-size: 28px;
+    font-size: 2.5rem; 
   }
+
   .navbar-nav .nav-link {
     font-size: 18px;
     margin: 0 10px;
   }
+
   .container {
     padding: 15px;
-  }
-  .mobile-img {
-    display: none;
+    flex-direction: column; 
   }
 
-
-  /* form */
-  .content-boxform{
-    grid-template-columns: 1fr;
+  .card {
+    width: 300px; 
+    margin: 15px auto; 
   }
 
-  .left-form{
-    height: 400px;
+  .product-item img {
+    width: 250px; 
   }
+
+  .content-boxform {
+    grid-template-columns: 1fr; 
+  }
+
+  .left-form {
+    height: 400px; 
+  }
+
+  .btn-banner-basket, .btn-banner-yoga {
+    left: 150px; 
+  }
+
+  .back-img, .back-img2 {
+    height: 600px; /
+  }
+
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+  .product {
+    max-width:45%;
+    margin: 15pxpx; 
+  }
+
 }
 
 /* mobile (menor a 768px) */
@@ -618,42 +638,138 @@ footer ul {
   h1 {
     font-size: 24px;
   }
+
   .navbar-nav .nav-link {
     font-size: 16px;
     margin: 5px 0;
   }
+
   .navbar {
     text-align: center;
   }
+
   .container1 {
     display: none;
   }
+
+
+
   .banner-ppal {
-    margin: 0px;
+    margin: 0;
     padding: 0;
-    height: 700px;
+    height: 500px; 
     display: none;
   }
+
   .header {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 10px; 
   }
+
   .mobile-img {
     display: block;
   }
 
-/* form */
-  .content-boxform{
-    grid-template-columns:350px;
+  /* Cards de productos */
+  .product-item img {
+    width: 180px; 
   }
 
-  .left-form{
+  /* Ajustes del formulario */
+  .content-boxform {
+    grid-template-columns: 1fr; 
+  }
+
+  .left-form {
     height: 150px;
   }
+
+   /* Ajustes para que las imágenes ocupen todo el ancho y el alto se adapte */
+   .back-img, .back-img2 {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+  }
+
+  .btn-banner-basket, .btn-banner-yoga {
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px; 
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100%; 
+    margin: 10px 0;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  .card {
+    max-width: 100%; 
+    margin-bottom: 20px;
 }
+
+  .product-container{
+  flex-direction: column;
+    align-items: center;
+}
+
+    .product{
+  max-width: 100%; 
+  margin-bottom: 20px;
+}
+
+.banner-ppal,
+  .banner-men {
+    display: none; /* Ocultar la imagen de escritorio en mobile */
+  }
+
+
+  .banner-kids{
+    display: none;
+  }
+
+  /* seccion men */
+  .filters {
+    margin-bottom: 15px; 
+  }
+
+  .card {
+    width: 100%; /* Las tarjetas ocupan todo el ancho */
+    margin: 10px 0; /* Espaciado vertical */
+  }
+
+  .flexmen {
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Centra las tarjetas */
+  }
+
+  /* seccion women */
+  #carouselExampleIndicators{
+    display: none;
+  }
+
+  footer {
+  font-size: 12px; 
+  padding: 50px 0 15px; 
+}
+
+
+
+}
+
+
 
 
