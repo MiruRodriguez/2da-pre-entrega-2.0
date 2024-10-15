@@ -11,6 +11,7 @@ $input-hover-bg: rgba(0, 0, 0, 0.1);
 $input-focus-border: rgba(30, 85, 250, 0.47);
 $btn-bg: #2ecc71;
 
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -19,9 +20,11 @@ $btn-bg: #2ecc71;
     font-family: sans-serif;
 }
 
+
 body {
     background-color: darken($btn-bg, 10%);
 }
+
 
 /* Estilo header con bootstrap */
 .header {
@@ -35,8 +38,10 @@ body {
     z-index: 1;
     border-radius: $border-radius;
 
+
 .logo {
     cursor: pointer;
+
 
     img {
         height: 20px;
@@ -45,27 +50,33 @@ body {
     }
 }
 
+
 /* Estilos del Navbar */
 .navbar {
     width: 100%;
     color: white;
 
+
     .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
+
 
     .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
 
+
     .nav-item {
         padding: 0 20px;
+
 
         .nav-link {
         color: $nav-link-color;
         font-weight: 700;
         text-decoration: none;
+
 
         &:hover {
             transform: scale(1.1);
@@ -74,26 +85,31 @@ body {
     }
     }
 
+
   /* Estilos de la búsqueda */
     .search {
     display: flex;
     align-items: center;
     margin-right: 0;
 
+
     .search-form {
         display: flex;
         margin: 0;
+
 
         .inputs {
         display: flex;
         flex-direction: column;
         gap: 10px;
 
+
         .input-group {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 10px;
+
 
             input {
             padding: 10px;
@@ -104,22 +120,26 @@ body {
             font-size: 16px;
             }
 
+
             .icon {
             color: white;
             }
         }
         }
     }
-    } 
+    }
 }
+
 
 /* Estilos del Main */
 main {
     margin-top: 100px;
 
+
     .container {
     display: flex;
     justify-content: center;
+
 
     .card {
         width: 325px;
@@ -128,13 +148,16 @@ main {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         margin: 20px;
 
+
         img {
         width: 100%;
         height: auto;
         }
 
+
         .card-content {
         padding: 16px;
+
 
         h3 {
             font-size: 28px;
@@ -144,10 +167,12 @@ main {
     }
     }
 
+
     .banner-ppal {
     width: 100%;
     padding: 25px;
     }
+
 
   /* Flex de abajo del banner */
     .container1 {
@@ -156,11 +181,13 @@ main {
     padding: 20px;
     gap: 20px;
 
+
     .main-content {
         flex: 2;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
 
         .shop-button {
         padding: 10px 20px;
@@ -172,14 +199,17 @@ main {
         }
     }
 
+
     h1 {
         font-size: 3rem;
         margin: 0;
     }
 
+
     .image-large {
         background-color: #000;
         padding: 20px;
+
 
         img {
         max-width: 100%;
@@ -187,11 +217,13 @@ main {
         }
     }
 
+
     .side-content {
         flex: 3;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
 
         .text-box {
         background-color: #f4f4f4;
@@ -199,11 +231,13 @@ main {
         }
     }
 
+
     .grid {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         flex: 1;
+
 
         .grid-item {
         flex: 1;
@@ -214,6 +248,7 @@ main {
         justify-content: center;
         align-items: center;
 
+
         img {
             max-width: 100%;
             height: auto;
@@ -221,17 +256,21 @@ main {
         }
     }
 
+
     .titles {
         padding: 0 25px;
     }
+
 
     .bestseller {
         color: red;
     }
 
+
     .h5-pages-indicator {
         padding: 0px 50px;
     }
+
 
     #img-publicity {
         width: 250px;
@@ -240,6 +279,7 @@ main {
         object-fit: cover;
     }
     }
+
 
   /* Sección men */
     .flexmen {
@@ -250,11 +290,13 @@ main {
     margin-bottom: 20px;
     }
 
+
   /* Categorías */
 .filters h4,
 .filters h5 {
     font-weight: bold;
 }
+
 
     .clean-filters {
     font-size: 14px;
@@ -263,17 +305,21 @@ main {
     cursor: pointer;
     }
 
+
   /* Sección sports */
     .shop-section {
     margin: 20px;
+
 
     h2 {
         margin-bottom: 20px;
     }
 
+
     .cards-container {
         display: flex;
         justify-content: space-between;
+
 
         .card {
         flex: 1;
@@ -281,6 +327,7 @@ main {
         border-radius: $border-radius;
         overflow: hidden;
         flex-basis: 30%;
+
 
         img {
             width: 100%;
@@ -292,6 +339,7 @@ main {
     }
     }
 
+
   /* Sección banner yoga y basket */
     .back-img {
     background-image: url(../img/banner-basket.png);
@@ -302,6 +350,7 @@ main {
     width: calc(100% - 30px);
     position: relative;
     border-radius: $border-radius;
+
 
     .btn-banner-basket {
         position: absolute;
@@ -316,6 +365,7 @@ main {
     }
     }
 
+
     .back-img2 {
     background-image: url(../img/banner-yoga.png);
     background-repeat: no-repeat;
@@ -326,6 +376,7 @@ main {
     position: relative;
     border-radius: $border-radius;
     margin-top: 10px;
+
 
     .btn-banner-yoga {
         position: absolute;
@@ -340,6 +391,7 @@ main {
     }
     }
 
+
   /* Sección sky no limits */
     .sky-img {
     width: 100%;
@@ -347,10 +399,12 @@ main {
     border-radius: $border-radius;
     }
 
+
     .banner-sky {
     text-align: center;
     margin: 20px;
     }
+
 
   /* Sección jordan */
     .jordan-img {
@@ -359,9 +413,11 @@ main {
     border-radius: $border-radius;
     }
 
+
     .banner-jordan-section {
     text-align: center;
     }
+
 
   /* Sección cards Jordan */
     .product-section {
@@ -369,13 +425,16 @@ main {
     margin-top: 50px;
     margin-bottom: 20px;
 
+
     .product-container {
         display: flex;
         justify-content: center;
         gap: 20px;
 
+
         .product-item {
         text-align: center;
+
 
         img {
           width: 400px; /* Ajusta según sea necesario */
@@ -384,25 +443,30 @@ main {
         }
     }
 
+
     .card1 {
         width: 400px;
         margin: 20px 20px;
         border-radius: $border-radius;
         overflow: hidden;
 
+
         img {
         width: 100%;
         height: auto;
         }
 
+
         .card-body {
         padding: 20px;
         }
+
 
         .product-title {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
         }
+
 
         .btn {
         background-color: $btn-bg;
@@ -412,13 +476,15 @@ main {
         border-radius: $border-radius;
         cursor: pointer;
 
+
         &:hover {
-            background-color: darken($btn-bg, 10%);
+            background-color: color.adjust($btn-bg, $lightness: -10%);
         }
         }
     }
     }
 }
+
 
 /* Estilos del footer */
 footer {
@@ -426,15 +492,18 @@ footer {
     color: $footer-text-color;
     padding: 20px;
 
+
     .footer-links {
     list-style: none;
     display: flex;
     justify-content: space-around;
 
+
     .footer-link {
         color: $footer-text-color;
         text-decoration: none;
         font-weight: 700;
+
 
         &:hover {
         text-decoration: underline;
@@ -443,11 +512,13 @@ footer {
     }
 }
 
+
 /* tablets (768px - 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
     h1 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
+
 
     .navbar-nav {
         .nav-link {
@@ -456,43 +527,51 @@ footer {
         }
     }
 
+
     .container {
         padding: 15px;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
+
     .card {
-        width: 300px; 
-        margin: 15px auto; 
+        width: 300px;
+        margin: 15px auto;
     }
+
 
     .product-item {
         img {
-        width: 250px; 
+        width: 250px;
         }
     }
-    
+   
     .content-boxform {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
+
 
     .left-form {
-        height: 400px; 
+        height: 400px;
     }
+
 
     .btn-banner-basket, .btn-banner-yoga {
-        left: 150px; 
+        left: 150px;
     }
 
+
         .back-img, .back-img2 {
-        height: 600px; 
+        height: 600px;
     }
+
 
     .product-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
     }
+
 
     .product {
         max-width: 45%;
@@ -500,11 +579,13 @@ footer {
     }
 }
 
+
   /* mobile (menor a 768px) */
     @media (max-width: 767px) {
     h1 {
         font-size: 24px;
     }
+
 
     .navbar-nav {
         .nav-link {
@@ -513,45 +594,54 @@ footer {
         }
     }
 
+
     .navbar {
         text-align: center;
     }
+
 
     .container1 {
         display: none;
     }
 
+
     .banner-ppal {
         margin: 0;
         padding: 0;
-        height: 500px; 
+        height: 500px;
         display: none;
     }
 
+
     .header {
         margin: 0;
-        padding: 10px; 
+        padding: 10px;
     }
+
 
     .mobile-img {
         display: block;
     }
 
+
     /* Cards de productos */
     .product-item {
         img {
-        width: 180px; 
+        width: 180px;
         }
     }
 
+
     /* Ajustes del formulario */
     .content-boxform {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
+
 
     .left-form {
         height: 150px;
     }
+
 
     /* Ajustes para que las imágenes ocupen todo el ancho y el alto se adapte */
     .back-img, .back-img2 {
@@ -561,76 +651,91 @@ footer {
         width: 100%;
     }
 
+
     .btn-banner-basket, .btn-banner-yoga {
         left: 50%;
         top: 80%;
         transform: translate(-50%, -50%);
-        padding: 10px 30px; 
+        padding: 10px 30px;
         font-size: 14px;
     }
 
+
     .card {
-        width: 100%; 
+        width: 100%;
         margin: 10px 0;
     }
+
 
     .cards-container {
         flex-direction: column;
         align-items: center;
     }
 
+
     .card {
-        max-width: 100%; 
+        max-width: 100%;
         margin-bottom: 20px;
     }
+
 
     .product-container {
         flex-direction: column;
         align-items: center;
     }
 
+
     .product {
-        max-width: 100%; 
+        max-width: 100%;
         margin-bottom: 20px;
     }
+
 
     .banner-ppal,
     .banner-men {
       display: none; /* Ocultar la imagen de escritorio en mobile */
     }
 
+
     .banner-kids {
         display: none;
     }
 
+
     /* sección men */
     .filters {
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
+
 
     .card {
       width: 100%; /* Las tarjetas ocupan todo el ancho */
       margin: 10px 0; /* Espaciado vertical */
     }
 
+
     .flexmen {
       flex-direction: column; /* Coloca los elementos en una columna */
       align-items: center; /* Centra los elementos */
     }
 
+
     .card-group {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
       align-items: center; /* Centra las tarjetas */
     }
+
 
     /* sección women */
     #carouselExampleIndicators {
         display: none;
     }
 
+
     footer {
-        font-size: 12px; 
-        padding: 50px 0 15px; 
+        font-size: 12px;
+        padding: 50px 0 15px;
     }
 }
+
