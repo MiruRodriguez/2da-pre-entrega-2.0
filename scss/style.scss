@@ -1,0 +1,636 @@
+/* Variables */
+$primary-bg: white;
+$header-bg: black;
+$nav-link-color: whitesmoke;
+$footer-bg: black;
+$footer-text-color: white;
+$border-radius: 15px;
+$hover-color: #27ae60;
+$input-bg: rgba(230, 230, 230, 0.6);
+$input-hover-bg: rgba(0, 0, 0, 0.1);
+$input-focus-border: rgba(30, 85, 250, 0.47);
+$btn-bg: #2ecc71;
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: darken($btn-bg, 10%);
+}
+
+/* Estilo header con bootstrap */
+.header {
+    background-color: $header-bg;
+    position: fixed;
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: $border-radius;
+
+.logo {
+    cursor: pointer;
+
+    img {
+        height: 20px;
+        width: auto;
+    }
+    }
+}
+
+/* Estilos del Navbar */
+.navbar {
+    width: 100%;
+    color: white;
+
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    .nav-item {
+        padding: 0 20px;
+
+        .nav-link {
+        color: $nav-link-color;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        }
+    }
+    }
+
+  /* Estilos de la búsqueda */
+    .search {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+
+    .search-form {
+        display: flex;
+        margin: 0;
+
+        .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            outline: none;
+            border-radius: $border-radius;
+            margin-right: 10px;
+            font-size: 16px;
+            }
+
+            .icon {
+            color: white;
+            }
+        }
+        }
+    }
+    } 
+}
+
+/* Estilos del Main */
+main {
+    margin-top: 100px;
+
+    .container {
+    display: flex;
+    justify-content: center;
+
+    .card {
+        width: 325px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+
+        img {
+        width: 100%;
+        height: auto;
+        }
+
+        .card-content {
+        padding: 16px;
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        }
+    }
+    }
+
+    .banner-ppal {
+    width: 100%;
+    padding: 25px;
+    }
+
+  /* Flex de abajo del banner */
+    .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+
+    .main-content {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .shop-button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        align-self: flex-start;
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .image-large {
+        background-color: #000;
+        padding: 20px;
+
+        img {
+        max-width: 100%;
+        height: auto;
+        }
+    }
+
+    .side-content {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .text-box {
+        background-color: #f4f4f4;
+        padding: 20px;
+        }
+    }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex: 1;
+
+        .grid-item {
+        flex: 1;
+        min-width: 10px;
+        background-color: #f4f4f4;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        }
+    }
+
+    .titles {
+        padding: 0 25px;
+    }
+
+    .bestseller {
+        color: red;
+    }
+
+    .h5-pages-indicator {
+        padding: 0px 50px;
+    }
+
+    #img-publicity {
+        width: 250px;
+        height: 400px;
+        border-radius: $border-radius;
+        object-fit: cover;
+    }
+    }
+
+  /* Sección men */
+    .flexmen {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+
+  /* Categorías */
+.filters h4,
+.filters h5 {
+    font-weight: bold;
+}
+
+    .clean-filters {
+    font-size: 14px;
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+  /* Sección sports */
+    .shop-section {
+    margin: 20px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+        flex: 1;
+        margin: 0 10px;
+        border-radius: $border-radius;
+        overflow: hidden;
+        flex-basis: 30%;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        }
+    }
+    }
+
+  /* Sección banner yoga y basket */
+    .back-img {
+    background-image: url(../img/banner-basket.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 30px top 0;
+    height: 900px;
+    width: calc(100% - 30px);
+    position: relative;
+    border-radius: $border-radius;
+
+    .btn-banner-basket {
+        position: absolute;
+        left: 250px;
+        top: 500px;
+        padding: 10px 50px;
+        background-color: #2b2b2b;
+        border-radius: $border-radius;
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+    }
+    }
+
+    .back-img2 {
+    background-image: url(../img/banner-yoga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 30px top 0;
+    height: 900px;
+    width: calc(100% - 30px);
+    position: relative;
+    border-radius: $border-radius;
+    margin-top: 10px;
+
+    .btn-banner-yoga {
+        position: absolute;
+        left: 250px;
+        top: 500px;
+        padding: 10px 50px;
+        background-color: #2b2b2b;
+        border-radius: $border-radius;
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+    }
+    }
+
+  /* Sección sky no limits */
+    .sky-img {
+    width: 100%;
+    padding: 25px;
+    border-radius: $border-radius;
+    }
+
+    .banner-sky {
+    text-align: center;
+    margin: 20px;
+    }
+
+  /* Sección jordan */
+    .jordan-img {
+    width: 100%;
+    padding: 25px;
+    border-radius: $border-radius;
+    }
+
+    .banner-jordan-section {
+    text-align: center;
+    }
+
+  /* Sección cards Jordan */
+    .product-section {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    .product-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .product-item {
+        text-align: center;
+
+        img {
+          width: 400px; /* Ajusta según sea necesario */
+            height: auto;
+        }
+        }
+    }
+
+    .card1 {
+        width: 400px;
+        margin: 20px 20px;
+        border-radius: $border-radius;
+        overflow: hidden;
+
+        img {
+        width: 100%;
+        height: auto;
+        }
+
+        .card-body {
+        padding: 20px;
+        }
+
+        .product-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        }
+
+        .btn {
+        background-color: $btn-bg;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: $border-radius;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($btn-bg, 10%);
+        }
+        }
+    }
+    }
+}
+
+/* Estilos del footer */
+footer {
+    background-color: $footer-bg;
+    color: $footer-text-color;
+    padding: 20px;
+
+    .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    .footer-link {
+        color: $footer-text-color;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+        text-decoration: underline;
+        }
+    }
+    }
+}
+
+/* tablets (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    .navbar-nav {
+        .nav-link {
+        font-size: 18px;
+        margin: 0 10px;
+        }
+    }
+
+    .container {
+        padding: 15px;
+        flex-direction: column; 
+    }
+
+    .card {
+        width: 300px; 
+        margin: 15px auto; 
+    }
+
+    .product-item {
+        img {
+        width: 250px; 
+        }
+    }
+    
+    .content-boxform {
+        grid-template-columns: 1fr; 
+    }
+
+    .left-form {
+        height: 400px; 
+    }
+
+    .btn-banner-basket, .btn-banner-yoga {
+        left: 150px; 
+    }
+
+        .back-img, .back-img2 {
+        height: 600px; 
+    }
+
+    .product-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .product {
+        max-width: 45%;
+        margin: 15px;
+    }
+}
+
+  /* mobile (menor a 768px) */
+    @media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .navbar-nav {
+        .nav-link {
+        font-size: 16px;
+        margin: 5px 0;
+        }
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .container1 {
+        display: none;
+    }
+
+    .banner-ppal {
+        margin: 0;
+        padding: 0;
+        height: 500px; 
+        display: none;
+    }
+
+    .header {
+        margin: 0;
+        padding: 10px; 
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    /* Cards de productos */
+    .product-item {
+        img {
+        width: 180px; 
+        }
+    }
+
+    /* Ajustes del formulario */
+    .content-boxform {
+        grid-template-columns: 1fr; 
+    }
+
+    .left-form {
+        height: 150px;
+    }
+
+    /* Ajustes para que las imágenes ocupen todo el ancho y el alto se adapte */
+    .back-img, .back-img2 {
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+
+    .btn-banner-basket, .btn-banner-yoga {
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        padding: 10px 30px; 
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .banner-ppal,
+    .banner-men {
+      display: none; /* Ocultar la imagen de escritorio en mobile */
+    }
+
+    .banner-kids {
+        display: none;
+    }
+
+    /* sección men */
+    .filters {
+        margin-bottom: 15px; 
+    }
+
+    .card {
+      width: 100%; /* Las tarjetas ocupan todo el ancho */
+      margin: 10px 0; /* Espaciado vertical */
+    }
+
+    .flexmen {
+      flex-direction: column; /* Coloca los elementos en una columna */
+      align-items: center; /* Centra los elementos */
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column; 
+      align-items: center; /* Centra las tarjetas */
+    }
+
+    /* sección women */
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    footer {
+        font-size: 12px; 
+        padding: 50px 0 15px; 
+    }
+}
